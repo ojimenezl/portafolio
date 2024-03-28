@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const bodyParser = require('body-parser');
-const config = require('./config');
+//const config = require('./config');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 // URL de conexión proporcionada por MongoDB Atlas
-const uri = config.uri || process.env.MONGODB_URI
+const uri = process.env.MONGODB_URI
 const dbName = 'data'; // Reemplaza con el nombre de tu base de datos
 
 // Crear un cliente de MongoDB
