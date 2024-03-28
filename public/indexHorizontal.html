@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Horizontal</title>
+  <link rel="stylesheet" href="css/indexHorizontal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Poor+Story" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<body>
+  <div class="container">
+    <i class="fas fa-expand fullscreen-btn" onclick="toggleFullScreen()"></i>
+    <button class="nav-btn" onclick="scrollToPreviousPage()"><i class="fas fa-arrow-left"></i></button>
+    <button class="nav-btn nav-btn-right" onclick="scrollToNextPage()"><i class="fas fa-arrow-right"></i></button>
+
+
+    <div class="content blue">
+      <!-- Primera "pantalla" -->
+      <h1>Página Horizontal?</h1>
+      <p>Desliza suavemente la rueda del mouse.</p>
+    </div>
+    <div class="content green">
+      <!-- Segunda "pantalla" -->
+      <h1>Bienvenido</h1>
+
+      <p id="texto-a-leer">¡Hola, soy Oscar Jimenez!</p>
+      <div class="translate-buttons">
+        
+        <button class="translate-button" onclick="traducirTexto('en')">
+          <i class="fas fa-language"></i> Inglés
+        </button>
+        <button class="translate-button" onclick="traducirTexto('es')">
+          <i class="fas fa-language"></i> Español
+        </button>
+        <button class="translate-button" onclick="traducirTexto('pt')">
+          <i class="fas fa-language"></i> Portugués
+        </button>
+      <button class="play-button" onclick="leerTexto()"><i class="fas fa-volume-up"></i></button>
+
+      </div> 
+    </div>
+    <div class="content tres">
+      <!-- Tercera "pantalla" lengujaes-->
+      <!-- <h1>Lenguajes de Programacion</h1> -->
+      <div class="botones-container">
+        <button class="boton" onclick="cambiarColor(this,6)">
+          <img src="img/php.png" alt="Descripción de la imagen">
+        </button>
+        <button class="boton" onclick="cambiarColor(this,4)">
+          <img src="img/nodejs.png" alt="Descripción de la imagen">
+        </button>
+        <button class="boton" onclick="cambiarColor(this,5)">
+          <img src="img/python.png" alt="Descripción de la imagen">
+        </button>
+        <button class="boton" onclick="javascript(this)">
+          <img src="img/js.png" alt="Descripción de la imagen">
+        </button>
+        <button class="boton" onclick="goToApps(this)">
+          <img src="img/ionic.avif" alt="Descripción de la imagen">
+          <!-- https://apkpure.com/es/jobox/io.ionic.starter.jobox -->
+          <!-- https://apkpure.com/es/tuweka/io.ionic.tuwekacli -->
+          <!-- https://github.com/ojimenezl/gepge-front-end -->
+        </button>
+        <button class="boton" onclick="goToKotlin(this)">
+          <img src="img/android.png" alt="Descripción de la imagen">
+          <!-- https://github.com/ojimenezl/testKotlin -->
+        </button>
+        <button class="boton" onclick="guardarSql(this)">
+          <img src="img/sql.png" alt="Descripción de la imagen">
+        </button>
+        <button class="boton" onclick="guardarMg(this)">
+          <img src="img/mongo.png" alt="Descripción de la imagen">
+        </button>
+        <button class="boton" onclick="gatito(this)">
+          <img src="img/git.png" alt="Descripción de la imagen">
+        </button>
+        <!-- <button class="boton" onclick="cambiarColor(this)">
+          <img src="img/postman.png" alt="Descripción de la imagen">
+        </button> -->
+      </div>
+    </div>
+    <div class="content yellow">
+      <!-- Cuarta "pantalla" -->
+      <h1>Contacto</h1>
+      <p>Correo: oscarj-456@hotmail.com</p>
+    </div>
+   
+    <div class="content node">
+      <!-- Cuarta "pantalla" -->
+      <h1>Inkigloo</h1>
+      <p>Para crear libros y capitulos en directo y que todo el mundo pueda ver tu creacion al instante, utilizando socket.io</p>
+      <div class="translate-buttons">
+        <button class="translate-button" onclick="redirigirPaginaNode()">
+          Ver
+        </button>
+        <button class="translate-button" onclick="goPage(2)">
+           Regresar
+        </button>
+      </div>  
+    </div>
+    
+    <div class="content python">
+      <!-- Cuarta "pantalla" -->
+      <h1>Predictor de Resolucion de Jucios</h1>
+      <p>Usando Machine Learning y NPL para la deteccion de gravedad del juicio y postuma sentencia</p>
+      <div class="translate-buttons">
+        <button class="translate-button" onclick="redirigirPaginaPy()">
+          Ver
+        </button>
+        <button class="translate-button" onclick="goPage(2)">
+           Regresar
+        </button>
+      </div>  
+    </div>
+
+    <div class="content php">
+      <!-- Cuarta "pantalla" -->
+      <h1>Administración de datos y PDF con PHP</h1>
+      <p>Si no puedes visualizarlo, tal vez sea porque los servidores se encuentran en su país de origen, Ecuador. Ya que es una empresa de seguridad líder de este país.</p>    
+      <div class="translate-buttons">
+      <button class="translate-button" onclick="redirigirPaginaPHP()">
+        Ver
+      </button>
+      <button class="translate-button" onclick="goPage(2)">
+         Regresar
+      </button>
+    </div>  
+    </div>
+    
+    
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/indexHorizontal.js"></script>
+</body>
+
+</html>

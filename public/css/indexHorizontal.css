@@ -1,0 +1,182 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  font-family: 'Poor Story', system-ui;
+}
+.container-texto {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  width: 200%; /* Ancho doble para acomodar el contenido */
+  height: 100vh; /* Toma el 100% del alto de la ventana */
+  display: flex;
+}
+
+.content {
+  width: 50%; /* Ancho de cada "página" */
+  flex-shrink: 0; /* Evita que el contenido se contraiga */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: #23a58b;
+}
+
+.green {
+  background-color: #4e9e86;
+}
+
+.tres {
+  background-color: rgb(39, 37, 37); 
+}
+
+.yellow {
+  background-color: #07935f; 
+}
+.node {
+  background-color: #57737c; 
+}
+.php {
+  background-color: #57737c; 
+}
+.python {
+  background-color: #57737c; 
+}
+h1, p {
+  color: rgb(0, 0, 0); /* Color del texto */
+  padding: 20px;
+}
+
+.botones-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.boton {
+  width: 180px;
+  height: 120px;
+  font-size: 18px;
+  color: rgb(106, 106, 106);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  position: relative;
+  background-color: rgb(72, 71, 71);
+  
+}
+.snowflake {
+  position: absolute; /* Posiciona cada copo de nieve de forma absoluta */
+  color: #fff; /* Color de la nieve */
+  font-size: 20px; /* Tamaño del copo de nieve */
+}
+.boton:hover {
+  box-shadow: 0 0 20px 5px rgba(2, 251, 176, 0.819); /* Iluminación al pasar el mouse */
+}
+
+/* Estilo adicional para simular el aspecto de un LED apagado */
+.boton::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: inherit;
+  /* background-color: rgba(0, 0, 0, 0.733); */
+}
+.boton img {
+  width: 50%; /* Ajusta la imagen al ancho del botón */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+.fullscreen-btn {
+  position: absolute;
+  top: 10px; /* Distancia desde la parte superior */
+  left: 10px; /* Distancia desde la izquierda */
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  cursor: pointer;
+}
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #12e4b7; /* Color de los iconos */
+  transition: color 0.3s; /* Transición de color al pasar el mouse */
+  border-radius: 50%; /* Hace que el borde del botón sea circular */
+}
+
+.nav-btn:hover i {
+  box-shadow: 0 0 150px 70px rgba(9, 69, 53, 0.5);
+  border-radius: 100%; /* Hace que el borde del efecto de sombra sea circular */
+}
+
+
+.nav-btn-right {
+  right: 10px; /* Posición del botón derecho */
+  transform: translateY(-50%); /* Alineación vertical centrada */
+}
+ 
+.play-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(35, 96, 78); /* Color del icono */
+}
+
+.play-button:hover {
+  color: black; /* Cambio de color al pasar el mouse */
+}
+.translate-buttons {
+  display: flex; /* Utilizamos flexbox para colocar los botones en línea */
+}
+
+.translate-button {
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid rgb(35, 96, 78); /* Borde del botón */
+  color: rgb(35, 96, 78); /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  margin-right: 10px; /* Margen derecho entre los botones */
+  cursor: pointer;
+}
+
+.translate-button:last-child {
+  margin-right: 0; /* Eliminamos el margen derecho del último botón */
+}
+
+.translate-button:hover {
+  background-color: rgb(45, 44, 44); /* Color de fondo al pasar el mouse */
+  color: white; /* Color del texto al pasar el mouse */
+}
+
+.translate-button i {
+  margin-right: 5px; /* Espaciado entre el ícono y el texto */
+}
+.custom-confirm-button-class {
+  border-color: #A2D9CE !important; /* Cambia el color del borde del botón */
+
+  background-color: #84AEA6 !important;
+  /* !important es utilizado para asegurarse de que los estilos se apliquen */
+  color: white !important; /* Cambia el color del texto del botón */
+
+}
